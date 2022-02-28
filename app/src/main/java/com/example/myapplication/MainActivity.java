@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
@@ -93,7 +94,13 @@ public class MainActivity extends AppCompatActivity {
         Random r = new Random();
         Random g = new Random();
         Random b = new Random();
+        int x = r.nextInt(256);
+        int y = g.nextInt(256);
+        int z = b.nextInt(256);
+        red.setProgress(x);
+        green.setProgress(y);
+        blue.setProgress(z);
+        ustawKolor(x, y, z);
 
-        ustawKolor(r.nextInt(256), g.nextInt(256), b.nextInt(256));
     }
 }
