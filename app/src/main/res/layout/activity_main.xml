@@ -60,6 +60,8 @@
         android:id="@+id/losowy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/kolorek"/>
+        android:layout_below="@id/kolorek"
+        android:onClick="losuj"
+        android:text="Losuj Kolor"/>
 
 </RelativeLayout>
